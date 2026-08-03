@@ -16,7 +16,8 @@ const timeout = function (s) {
 const showRecipe = async function () {
   try {
     const res = await Promise.race([
-      fetch('https://forkify-api.jonas.io/api/v2/recipes/5ed6604591c37cdc054bc886'),
+      fetch('https://forkify-api.jonas.io/api/v2/recipes/664c8f193e7aa067e94e8438'),
+      //fetch('https://forkify-api.jonas.io/api/v2/recipes/5ed6604591c37cdc054bc886'),
       timeout(10),
     ]);
     const data = await res.json();
